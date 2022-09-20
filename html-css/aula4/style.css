@@ -1,0 +1,59 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#senha, #email{
+    width: 400px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.tabelas{
+    display: flex;
+    justify-content: center;
+}
+
+.tabela_java, .tabela_sales{
+    margin-right: 30px;
+}
+
+table{
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 15px;
+    text-align: justify;
+}
+
+img{
+    margin-right: 10px;
+    width: 15%;
+}
+
+.titulo{
+    font-size: 25px;
+    text-align: center;
+}
+
+.bolsa-integral{
+    color: rgb(67, 126, 253);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.inscrever{
+    background-color: rgb(255, 247, 13);
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    padding: 15px;
+    font-weight: 600;
+    margin-left: 40px;
+}
+
+.inscrever:hover{
+    background-color: rgb(227, 220, 3);
+    cursor: pointer;
+}
