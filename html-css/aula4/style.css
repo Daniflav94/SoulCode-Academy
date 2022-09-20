@@ -1,12 +1,21 @@
+body {
+    font:18px 'Gilroy', sans-serif;
+    background-color: rgb(15, 99, 122);
+    margin: 100px;
+    }
+
 .login{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: antiquewhite;
 }
-
 
 #senha, #email{
     width: 400px;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
     margin-top: 5px;
     margin-bottom: 10px;
 }
@@ -21,10 +30,10 @@
 }
 
 table{
-    border: 1px solid grey;
+    background-color: white;
     border-radius: 4px;
     padding: 15px;
-    text-align: justify;
+    text-align: start;
 }
 
 img{
@@ -38,8 +47,8 @@ img{
 }
 
 .bolsa-integral{
-    color: rgb(67, 126, 253);
-    font-size: 20px;
+    color: rgb(15, 99, 122);
+    font-size: 23px;
     font-weight: 800;
 }
 
@@ -50,10 +59,25 @@ img{
     height: 40px;
     padding: 15px;
     font-weight: 600;
-    margin-left: 40px;
 }
 
 .inscrever:hover{
-    background-color: rgb(227, 220, 3);
+    background-color: rgb(227, 193, 3);
+    cursor: pointer;
+}
+
+button{
+    background-color: rgb(227, 193, 3);
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: rgb(189, 161, 3);
     cursor: pointer;
 }
