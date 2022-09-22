@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./tabela.css">    
     <title>Tabela do Campeonato Brasileiro</title>
 </head>
 <body>
-    <section>
-        <table border="1" cellpadding="10" style="border-collapse: collapse;">
+    <section class="tabela">
+        <table>
             <thead>
                 <tr>
-                    <th colspan="12">TABELA DO BRASILEIRÃO</th>
+                    <th colspan="12" class="titulo">TABELA DO BRASILEIRÃO</th>
                 </tr>
                 <tr> 
                     <th>ZONA</th>
@@ -26,10 +28,11 @@
                     <th>GC</th>
                     <th>SG</th>
                     <th>%</th>
+                    <div></div>
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr class="libertadores">
                     <td rowspan="6">Libertadores</td>
                     <td>1</td>
                     <td>Palmeiras</td>
@@ -44,7 +47,7 @@
                     <td>70</td>
 
                 </tr>
-                <tr>
+                <tr class="libertadores">
                     <td>2</td>
                     <td>Fluminense</td>
                     <td>48</td>
@@ -57,7 +60,7 @@
                     <td>11</td>
                     <td>59</td>
                 </tr>
-                <tr>
+                <tr class="libertadores">
                     <td>3</td>
                     <td>Internacional</td>
                     <td>46</td>
@@ -70,7 +73,7 @@
                     <td>16</td>
                     <td>59</td>
                 </tr>
-                <tr>
+                <tr class="libertadores">
                     <td>4</td>
                     <td>Flamengo</td>
                     <td>45</td>
@@ -83,7 +86,7 @@
                     <td>18</td>
                     <td>56</td>
                 </tr>
-                <tr>
+                <tr class="libertadores">
                     <td>5</td>
                     <td>Corinthians</td>
                     <td>44</td>
@@ -96,7 +99,7 @@
                     <td>4</td>
                     <td>54</td>
                 </tr>
-                <tr>
+                <tr class="libertadores">
                     <td>6</td>
                     <td>Athletico-PR</td>
                     <td>44</td>
@@ -109,7 +112,9 @@
                     <td>2</td>
                     <td>54</td>
                 </tr>
-                <tr>
+                <tr class="divisao"></tr>
+                
+                <tr class="copa">
                     <td rowspan="6">Copa Sul-Americana</td>
                     <td>7</td>
                     <td>Athletico-MG</td>
@@ -123,7 +128,7 @@
                     <td>4</td>
                     <td>49</td>
                 </tr>
-                <tr>
+                <tr class="copa">
                     <td>8</td>
                     <td>América-MG</td>
                     <td>39</td>
@@ -136,7 +141,7 @@
                     <td>-2</td>
                     <td>48</td>
                 </tr>
-                <tr>
+                <tr class="copa">
                     <td>9</td>
                     <td>Goiás</td>
                     <td>37</td>
@@ -149,7 +154,7 @@
                     <td>-3</td>
                     <td>46</td>
                 </tr>
-                <tr>
+                <tr class="copa">
                     <td>10</td>
                     <td>Botafogo</td>
                     <td>34</td>
@@ -162,7 +167,7 @@
                     <td>-3</td>
                     <td>42</td>
                 </tr>
-                <tr>
+                <tr class="copa">
                     <td>11</td>
                     <td>Santos</td>
                     <td>34</td>
@@ -175,7 +180,7 @@
                     <td>4</td>
                     <td>42</td>
                 </tr>
-                <tr>
+                <tr class="copa">
                     <td>12</td>
                     <td>Red Bull Bragantino</td>
                     <td>34</td>
@@ -188,7 +193,9 @@
                     <td>3</td>
                     <td>42</td>
                 </tr>
-                <tr>
+                <tr class="divisao"></tr>
+                <tr class="
+                nenhuma">
                     <td rowspan="4">N/A</td>
                     <td>13</td>
                     <td>São Paulo</td>
@@ -202,7 +209,8 @@
                     <td>4</td>
                     <td>42</td>
                 </tr>
-                <tr>
+                <tr class="
+                nenhuma">
                     <td>14</td>
                     <td>Fortaleza</td>
                     <td>31</td>
@@ -215,7 +223,8 @@
                     <td>-4</td>
                     <td>38</td>
                 </tr>
-                <tr>
+                <tr class="
+                nenhuma">
                     <td>15</td>
                     <td>Ceará</td>
                     <td>31</td>
@@ -228,7 +237,8 @@
                     <td>-2</td>
                     <td>38</td>
                 </tr>
-                <tr>
+                <tr class="
+                nenhuma">
                     <td>16</td>
                     <td>Coritiba</td>
                     <td>28</td>
@@ -241,7 +251,8 @@
                     <td>-15</td>
                     <td>35</td>
                 </tr>
-                <tr>
+                <tr class="divisao"></tr>
+                <tr class="rebaix">
                     <td rowspan="4">Rebaixamento</td>
                     <td>17</td>
                     <td>Avaí</td>
@@ -255,7 +266,7 @@
                     <td>-13</td>
                     <td>35</td>
                 </tr>
-                <tr>
+                <tr class="rebaix">
                     <td>18</td>
                     <td>Cuiabá</td>
                     <td>27</td>
@@ -268,7 +279,7 @@
                     <td>-8</td>
                     <td>33</td>
                 </tr>
-                <tr>
+                <tr class="rebaix">
                     <td>19</td>
                     <td>Atlético-GO</td>
                     <td>22</td>
@@ -281,7 +292,7 @@
                     <td>-17</td>
                     <td>28</td>
                 </tr>
-                <tr>
+                <tr class="rebaix">
                     <td>20</td>
                     <td>Juventude</td>
                     <td>19</td>

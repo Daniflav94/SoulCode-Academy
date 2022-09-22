@@ -1,0 +1,36 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    
+}
+
+table{
+    border-collapse: separate;
+    border-spacing: 10px 20px;    
+}
+
+.tabela table .divisao{
+    border-bottom: 2px solid black;
+    padding: 1em;
+}
+
+.titulo{
+    font-size: 30px;
+    color: rgb(250, 241, 229);
+    font-weight: bold;
+    background-color: rgb(83, 151, 88);
+}
+
+.libertadores{
+    color: rgb(83, 151, 88);
+   
+   
+}
+
+.copa{
+    color: rgb(206, 94, 14);
+}
+
+.rebaix{
+    color: red;
+}
