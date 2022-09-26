@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    /*Crie um programa que pergunte quantos produtos um cliente pegou e depois peça para que ele informe
+o preço de cada produto. Ao recuperar possuir o valor de cada produto, faça a soma total da compra e
+informe o maior e o menor preço que foi informado*/
+
+    const qtdProdutos = parseInt(prompt("Informe a quantidade de produtos"))
+
+    let precoProdutos = []
+
+    for (let i = 0; i < qtdProdutos; i++){
+        let preco = parseFloat(prompt("Informe o valor do produto"))
+        precoProdutos.push(preco)
+    }
+
+    let soma = 0
+    let maior = 0
+    let menor = precoProdutos[0]
+
+    /*for (let i = 0; i < precoProdutos.length; i++) { 
+        soma += precoProdutos[i]    
+    }*/
+
+    for (let preco of precoProdutos) {
+        soma += preco
+        if(preco > maior){
+            maior = preco
+        }
+        if(preco < menor){
+            menor = preço
+        }
+    }
+
+    alert(`O preço final a pagar é de ${soma}, o maior preço é ${maior}, o menor preço é ${menor}`)
+
+
+  </script>  
+</body>
+</html>
