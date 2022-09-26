@@ -1,0 +1,25 @@
+body{
+    margin:  0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.box-1{
+    background-color: brown;
+}
+
+.box-2{
+    background-color: rgb(232, 202, 5);
+}
+
+.box-3{
+    background-color: rgb(32, 191, 45);
+}
+
+.box-4{
+    background-color: rgb(46, 153, 195);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}

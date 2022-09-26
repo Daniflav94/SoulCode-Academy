@@ -1,0 +1,62 @@
+body{
+    font-family: 'Barlow', sans-serif;
+    background-color: #C9ADA7;
+    display: flex;
+    margin: 80px 200px;
+
+}
+
+.container{
+    display: flex;
+    width: 1100px;
+    height: 600px;
+    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    background-color: #F2E9E4;
+    width: 35%;
+    height: 580px;
+    box-sizing: border-box;
+    margin: 0 15px;
+    overflow: hidden;
+}
+
+.data-e-sub{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.titulo{
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.subtitulo{
+    color: #9A8C98;
+    font-weight: bold;
+}
+
+.texto{
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+img{
+    border-radius: 12px 12px 0 0;
+    transition:ease;
+}
+
+img:hover{
+    scale: 1.1;
+}
+
