@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Crie um algortimo que recebe informações de 15 produtos. Cada produto possui nome, marca, uma foto (link de uma imagem da internet), preço unitário e a quantidade de produtos em estoque. Ao receber essas informações dos produtos, imprima no HTML essas informações de cada produto e o produto entre o preço e a quantidade de produtos em estoque (preço total).
+        
+        let produto = {}
+        let listaProdutos = []
+        let precoTotal = 0
+                
+        for (let i = 0; i < 15; i++) {
+            produto.nome = prompt('Digite o nome do produto: ')
+            produto.marca = prompt('Digite a marca do produto: ')           
+            produto.foto = prompt('Coloque aqui a url da foto do produto: ')
+            produto.preco = prompt('Digite o preço do produto: ')
+            produto.quantidade = prompt('Digite a quantidade do produto em estoque: ')
+
+            listaProdutos.push(produto)
+
+            precoTotal += produto.preco * produto.quantidade
+
+            document.write(`
+            <p>Produto: ${listaProdutos[i].nome}<br>
+            Marca: ${listaProdutos[i].marca}<br>
+            Foto: ${listaProdutos[i].foto}<br>
+            Preço: ${listaProdutos[i].preco}<br>
+            Quantidade em estoque: ${listaProdutos[i].quantidade}<br>
+            <br>
+            Valor total em estoque: ${precoTotal}<br>
+            <br><br>
+            </p>`)
+
+           
+        }
+  
+    </script>
+</body>
+</html>

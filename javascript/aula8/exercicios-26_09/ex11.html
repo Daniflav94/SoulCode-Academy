@@ -12,7 +12,7 @@
     <script>
         /*
        11. Leia um número binário e transforme-o em decimal
-        */
+        
         let numBinario = Number(prompt(`Digite um número binário`))
         let potenciasde2 = []
         let numDecimal= 0
@@ -29,6 +29,17 @@
             }
         }      
         alert(`${numDecimal}`)
+
+        <script>
+    */
+        // 11. Leia um número binário e transforme-o em decimal
+
+        let numeroBinario = parseInt(prompt(`Informe o número binário a ser convertido.`));
+        
+        /* parseInt converts strings to numbers, and it takes a second argument specifying the base in which the string representation is: */
+        let numeroDecimal = parseInt(numeroBinario, 2);
+
+        document.write(`<p>O número binário ${numeroBinario} em base 10 é ${numeroDecimal}</p>`)
 
     </script>
 
