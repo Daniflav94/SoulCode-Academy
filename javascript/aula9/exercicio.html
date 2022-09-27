@@ -9,7 +9,7 @@
 <body>
     <script>
         //Crie um algortimo que recebe informações de 15 produtos. Cada produto possui nome, marca, uma foto (link de uma imagem da internet), preço unitário e a quantidade de produtos em estoque. Ao receber essas informações dos produtos, imprima no HTML essas informações de cada produto e o produto entre o preço e a quantidade de produtos em estoque (preço total).
-        
+
         let produto = {}
         let listaProdutos = []
         let precoTotal = 0
@@ -32,12 +32,12 @@
             Preço: ${listaProdutos[i].preco}<br>
             Quantidade em estoque: ${listaProdutos[i].quantidade}<br>
             <br>
-            Valor total em estoque: ${precoTotal}<br>
+            
             <br><br>
-            </p>`)
-
-           
+            </p>`) 
         }
+
+        document.write(`Valor total em estoque: ${precoTotal}<br>`)
   
     </script>
 </body>
