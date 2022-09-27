@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*1. Desenvolver um algoritmo que leia a altura de 15 pessoas. Este programa deverá calcular e
+        mostrar :
+        a. A menor altura do grupo;
+        b. A maior altura do grupo; 
+        */
+
+        let listaAltura = []
+        let menor = Infinity
+        let maior = 0
+
+        for (let i = 1; i <= 15; i++) {
+            let altura = parseFloat(prompt(`Digite a altura da ${i} º pessoa:  `))
+            listaAltura.push(altura) 
+            if (altura > maior) {
+                maior = altura
+            }  
+            if (altura < menor) {
+                menor = altura
+            }    
+        }     
+        
+        alert(`Alturas digitadas: ${listaAltura}. Maior altura: ${maior}, menor altura: ${menor}`)
+        
+    </script>
+    
+</body>
+</html>
