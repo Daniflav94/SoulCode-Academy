@@ -18,7 +18,7 @@ public class Exercicio3 {
         }
         int numerosIdenticos = 0;
 
-        for (int i = 0; i < V1.length; i++){
+        for (int i = 0; i < 5; i++){
             if(V1[i] == V2[i]){
               numerosIdenticos++;
             }
