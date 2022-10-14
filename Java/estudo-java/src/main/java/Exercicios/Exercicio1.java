@@ -16,23 +16,26 @@ public class Exercicio1 {
 
         double resultado;
 
-        switch (operacao){
-            case 1:
+        switch (operacao) {
+            case 1 -> {
                 resultado = num1 + num2;
                 System.out.println(resultado);
-                break;
-            case 2:
+            }
+            case 2 -> {
                 resultado = num1 - num2;
                 System.out.println(resultado);
-                break;
-            case 3:
+            }
+            case 3 -> {
                 resultado = num1 * num2;
                 System.out.println(resultado);
-                break;
-            case 4:
+            }
+            case 4 -> {
                 resultado = num1 / num2;
                 System.out.println(resultado);
-                break;
+            }
+            default -> {
+                System.out.println("Você digitou uma operação inválida!");
+            }
         }
     }
 }
