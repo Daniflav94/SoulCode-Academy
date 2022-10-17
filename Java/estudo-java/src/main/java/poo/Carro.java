@@ -16,7 +16,7 @@ public class Carro {
         this.ano = ano;
         this.flex = flex;
         this.qtdPortas = qtdPortas;
-        this.combustivel = 30.0;
+        this.combustivel = combustivel;
         this.consumo = consumo;
         this.estaLigado = false;
 
@@ -55,8 +55,8 @@ public class Carro {
 
     // A main serve pra testar a classe
     public static void main(String[] args) {
-        Carro carro1 = new Carro("XY", "Ferrari", 2019, true, 4, 40, 15);
-        Carro carro2 = new Carro("Z", "Ford", 2000, false, 2, 50, 10);
+        Carro carro1 = new Carro("XY", "Ferrari", 2019, true, 4, 150, 15);
+        Carro carro2 = new Carro("Z", "Ford", 2000, false, 2, 200, 10);
 
         System.out.println(carro1.combustivel);
         carro1.abastecer(5);
@@ -71,7 +71,9 @@ public class Carro {
         System.out.println(carro1.ano); // 2022
 
         boolean viajou = carro1.viajar("Fortaleza", 30000);
+        boolean viajou2 = carro2.viajar("Guarujá", 100);
         System.out.println(viajou);
+        System.out.println(viajou2);
     }
 }
 
