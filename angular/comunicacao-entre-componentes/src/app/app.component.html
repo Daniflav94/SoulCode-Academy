@@ -1,0 +1,22 @@
+<div class="container">
+    <app-card 
+        titulo="Tecnologia"
+        banner="https://images.unsplash.com/photo-1509718443690-d8e2fb3474b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        corBtn="blueviolet"></app-card>
+    <app-card 
+        titulo="Viagem"
+        banner="https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&w=600"
+        corBtn="blue"></app-card>
+    <app-card 
+        titulo="Entretenimento"
+        banner="https://images.pexels.com/photos/7991378/pexels-photo-7991378.jpeg?auto=compress&cs=tinysrgb&w=600">
+    </app-card>
+</div>
+<div class="botoes">
+    <app-uploader (uploadCompleto)="mostraMsg()"></app-uploader> <br>
+    <!--Ao clicar no botão, deseja executar o método click() no input file-->
+    <!--Variáveis de template: variáveis criadas dentro do html-->
+    <input type="file" #inputFile>
+    <!--inputFilme: variável, equivalente a um getElementById, let = #-->
+    <button id="btn" (click)="inputFile.click()">Selecionar um arquivo</button>
+</div>

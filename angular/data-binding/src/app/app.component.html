@@ -4,6 +4,8 @@
 <input [type]="tipoInput" [value]="title">
 <button (click)="mudarTipoInput()"><img [src]="iconeOlho" alt="" width="12px"></button> <br><br><br>
 
+<!--ngModel é uma diretiva do Forms Module que é utilizada para observar a modificação de valores dentro de um campo de formulário,e sempre que o valor desse
+campo mudar,ele pegará a propriedade que foi passada para ele e atribuir a ela o valor que foi digitado dentro do campo automaticamente.-->
 <input type="number" placeholder="Digite o 1º número" [(ngModel)] = "n1" name="valor1">
 <input type="number" placeholder="Digite o 2° número" [(ngModel)] = "n2" name="valor2">
 <p>
