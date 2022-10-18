@@ -15,8 +15,8 @@ export class CartaoComponent implements OnInit {
   nome: string = "Nome Sobrenome";
   nomeDigitado: string = "";
   numCartao: string = "0000 0000 0000 0000";
-  dataExpMes: string = "10";
-  dataExpAno: string = "22";
+  dataExpMes: string = "MM";
+  dataExpAno: string = "AA";
   codigoCVC: string = "123";
   bandeira: string = "";
   bandeiraMaster: string = "https://logosmarcas.net/wp-content/uploads/2020/09/Mastercard-Logo.png"

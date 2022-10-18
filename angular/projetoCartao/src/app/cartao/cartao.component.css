@@ -11,7 +11,7 @@
     flex-direction: column;
     background: rgb(45,138,134);
     background: linear-gradient(180deg, rgba(45,138,134,1) 22%, rgba(11,84,120,1) 87%);
-    width: 45%;
+    width: 50%;
     box-sizing: border-box;
     padding: 50px 20px;
     align-items: center;
@@ -21,13 +21,14 @@
 .frente{
     display: flex;
     flex-direction: column;
-    width: 82%;
+    width: 84%;
     background: rgb(237,174,56);
     background: radial-gradient(circle, rgba(237,174,56,1) 47%, rgba(254,192,5,1) 100%);
     border-radius: 5px;
-    height: 28%;
+    height: 30%;
     margin-bottom: 30px;
-    padding: 10px;
+    padding: 15px;
+    font-size: 17px;
 }
 
 .logo-bandeira{
@@ -42,10 +43,10 @@
 .verso{
     display: flex;
     flex-direction: column;
-    width: 82%;
+    width: 84%;
     background-color: rgb(191, 190, 190);
     border-radius: 5px;
-    height: 28%;
+    height: 30%;
     align-items: center;
 }
 
@@ -85,6 +86,7 @@
     display: flex;
     justify-content: space-between;
     width: 75%;
+    margin-bottom: 5px;
 }
 
 
