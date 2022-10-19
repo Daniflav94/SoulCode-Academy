@@ -1,4 +1,7 @@
-.container{
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600&display=swap');
+
+
+.container {
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -6,58 +9,77 @@
     padding: 0;
 }
 
-.cartao{
+.cartao {
     display: flex;
     flex-direction: column;
-    background: rgb(45,138,134);
-    background: linear-gradient(180deg, rgba(45,138,134,1) 22%, rgba(11,84,120,1) 87%);
-    width: 50%;
+    background: rgb(45, 138, 134);
+    background: linear-gradient(180deg, rgba(45, 138, 134, 1) 22%, rgba(11, 84, 120, 1) 87%);
+    width: 40%;
     box-sizing: border-box;
     padding: 50px 20px;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
-.frente{
+.frente {
     display: flex;
     flex-direction: column;
-    width: 84%;
-    background: rgb(237,174,56);
-    background: radial-gradient(circle, rgba(237,174,56,1) 47%, rgba(254,192,5,1) 100%);
+    justify-content: space-between;
+    width: 100%;
+    background: rgb(237, 203, 78);
+    background: linear-gradient(114deg, rgba(237, 203, 78, 1) 8%, rgba(226, 154, 21, 1) 28%, rgba(235, 150, 33, 1) 48%, rgba(235, 161, 41, 1) 63%, rgba(237, 174, 56, 1) 77%, rgba(254, 192, 5, 1) 100%);
     border-radius: 5px;
-    height: 30%;
+    height: 33%;
     margin-bottom: 30px;
-    padding: 15px;
+    padding: 20px;
     font-size: 17px;
+    position: absolute;
+    top: 120px;
+    left: 105px;
 }
 
-.logo-bandeira{
+.numero-cartao {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.logo-bandeira {
     margin-bottom: 40px;
 }
 
-.cartao-footer{
+.cartao-footer {
     display: flex;
     justify-content: space-between;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
 }
 
-.verso{
+.verso {
     display: flex;
     flex-direction: column;
-    width: 84%;
+    width: 100%;
     background-color: rgb(191, 190, 190);
     border-radius: 5px;
-    height: 30%;
+    height: 33%;
     align-items: center;
+    font-family: 'Rajdhani', sans-serif;
+    position: absolute;
+    top: 400px;
+    left: 195px;
 }
 
-.faixa{
+.faixa {
     background-color: black;
     height: 40px;
     width: 100%;
     margin-top: 15px;
 }
 
-.codigo-seg{
+.codigo-seg {
     background-color: grey;
     width: 85%;
     height: 17%;
@@ -70,23 +92,25 @@
 
 /*FORMULÁRIO*/
 
-.form{
-    margin: 220px 250px;
+.form {
+    margin: 220px 200px;
     box-sizing: border-box;
 }
 
-.btn{
-    background: rgb(45,138,134);
-    background: linear-gradient(180deg, rgba(45,138,134,1) 22%, rgba(11,84,120,1) 87%);
+form{
+    padding-left: 150px;
+}
+
+.btn {
+    background: rgb(45, 138, 134);
+    background: linear-gradient(180deg, rgba(45, 138, 134, 1) 22%, rgba(11, 84, 120, 1) 87%);
     color: white;
     width: 100%;
 }
 
-.label-titulo{
+.label-titulo {
     display: flex;
     justify-content: space-between;
     width: 75%;
     margin-bottom: 5px;
 }
-
-

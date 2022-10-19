@@ -6,11 +6,11 @@
                 <img [src]="bandeira"  alt="" width="60px">
             </div>
             <div class="numero-cartao">
-                <p><strong>{{numCartao}}</strong></p>
+                <p>{{ numCartao }}</p>
             </div>
             <div class="cartao-footer">
-                <p class="nome">{{nome}}</p>
-                <p class="data-exp"><strong>{{dataExpMes}}/{{dataExpAno}}</strong></p>
+                <p class="nome">{{ nome }}</p>
+                <p class="data-exp">{{ dataExpMes }}/{{ dataExpAno }}</p>
             </div>
             
         </div>
@@ -19,7 +19,7 @@
             
             </div>
             <div class="codigo-seg">
-                <p class="cvc">{{codigoCVC}}</p>
+                <p class="cvc">{{ codigoCVC }}</p>
             </div>
             
         </div>
@@ -28,11 +28,11 @@
         <form>
             <div class="mb-3">
               <label for="exampleInputNome" class="form-label">Nome do Cartão</label>
-              <input type="text" class="form-control" id="exampleInputNome" [(ngModel)]="nome" name="nome" value="" placeholder="José Almir" (focus)="limparCampoNome()">
+              <input type="text" class="form-control" id="exampleInputNome" [(ngModel)]="nome" name="nome" value="" placeholder="Nome Sobrenome" (focus)="limparCampoNome()">
             </div>
             <div class="mb-3">
                 <label for="exampleInputNumero" class="form-label">Número do Cartão</label>
-                <input type="text" class="form-control" id="exampleInputNumero" aria-describedby="emailHelp" placeholder="0000 0000 0000 0000" [(ngModel)]="numCartao" name="numCartao" (focus)="limparCampoNum()" (change)="trocaBandeira()">
+                <input type="text" class="form-control" id="exampleInputNumero"  placeholder="0000 0000 0000 0000" [(ngModel)]="numCartao" name="numCartao" (focus)="limparCampoNum()" (change)="trocaBandeira()">
             </div>
             <div class="label-titulo">
                 <span>Expiração</span>
@@ -41,9 +41,10 @@
             
             <div class="input-group mb-3">
                 
-                <input type="text" class="form-control me-1" placeholder="MM" id="exampleInputExp" aria-label="Username" [(ngModel)]="dataExpMes" name="dataExpMes" (focus)="limparCampoDatas()">
-                <input type="text" class="form-control me-1" placeholder="AA" aria-label="Server" [(ngModel)] = "dataExpAno" name="dataExpAno">               
-                <input type="text" class="form-control" placeholder="123" aria-label="Server" id="exampleInputCVC" [(ngModel)] = "codigoCVC" name="valor5" (focus)="limparCampoCVC()">
+                <input type="text" class="form-control me-1" placeholder="MM" id="exampleInputExp" aria-label="Username" [(ngModel)]="dataExpMes" name="dataExpMes" (focus)="limparCampoDatas()" maxlength="2">
+                <input type="text" class="form-control me-1" placeholder="AA" aria-label="Server" [(ngModel)] = "dataExpAno" name="dataExpAno"
+                maxlength="2">               
+                <input type="text" class="form-control" placeholder="123" aria-label="Server" id="exampleInputCVC" [(ngModel)] = "codigoCVC" name="codigoCVC" (focus)="limparCampoCVC()" maxlength="3">
               </div>
             
             <button type="submit" class="btn">Confirmar</button>
