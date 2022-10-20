@@ -3,7 +3,7 @@ package poo;
 public class Pet {
     private String nome;
     private int idade;
-    private double peso;
+    protected double peso; //permite acesso direto nas subclasses
 
     public Pet(String nome, int idade, double peso) {
         this.nome = nome;
@@ -17,10 +17,12 @@ public class Pet {
     }
 
     public void comer(String comida){
+
         System.out.println("Comendo " + comida);
     }
 
     public void dormir(){
+
         System.out.println("Dormindo...");
     }
 

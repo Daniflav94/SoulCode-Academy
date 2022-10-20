@@ -26,6 +26,7 @@ public class Cachorro extends Pet{
     public void comer(String comida) {
         if (comida.equals(this.comidaFavorita)) {
             super.comer(comida);
+            this.peso += 0.5; //como o peso é protected é possível acessá-lo sem get e set
         } else {
             System.out.println("Não quis comer " + comida);
         }
@@ -42,14 +43,18 @@ public class Cachorro extends Pet{
         pet1.comer("banana");
 
         Cachorro bob = new Cachorro("Bob", 7, 18, "Pão", "Viralata");
+        bob.setPeso(20);
+        bob.peso = 20;
+
+
         bob.dormir();
         bob.emitirSom();
+        System.out.println(bob.getPeso());
         bob.comer(bob.comidaFavorita);
         bob.comer("cebola");
-        bob.setPeso(20);
-        System.out.println(bob.getPeso());
         bob.brincar();
         bob.correrAtrasMoto();
+        System.out.println(bob.getPeso());
     }
 }
 
