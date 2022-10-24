@@ -1,0 +1,27 @@
+<!--NgIf serve para que a partir de uma determinada condição booleana, um elemento html ou componente apareça na sua tela ou não
+NgClass permite adicionar ou remover classes de um elemento a partir de condições lógicas booleanas-->
+
+<div class="card" *ngIf="mostrarProduto; else outro">
+    <img [src]="prod.imagem" alt="" class="card-image-top">
+    <div class="card-body">
+        <h5 class="card-title">{{prod.nome}}</h5>
+        <h6 class="card-subtitle text-muted">R$ {{prod.preco}}</h6>
+        <span class="badge mb-1" [ngClass]="{
+            'bg-danger': prod.estoque <= 10,
+            'bg-warning': prod.estoque > 10 && prod.estoque <= 30,
+            'bg-info': prod.estoque > 30 && prod.estoque <= 100,
+            'bg-success': prod.estoque > 100
+        }">
+            {{prod.estoque}} unidades restantes
+        </span>
+        <p class="card-text text-truncate">
+            {{prod.descricao}}
+        </p>
+        <button class="btn btn-sm btn-danger" (click)="esconderProduto()">Esconder Produto</button>
+        <span class="x" (click)="excluirProduto()"><img src="../../assets/x.png" alt="" width="10px"></span>
+    </div> 
+</div>
+<ng-template #outro>
+    <p>O produto {{prod.nome}} foi ocultado para os usuários.</p>
+    <button class="btn btn-danger" (click)="revelarProduto()">Mostrar Produto</button>
+</ng-template>

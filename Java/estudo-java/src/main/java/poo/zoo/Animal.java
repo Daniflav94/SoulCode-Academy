@@ -8,21 +8,19 @@ public interface Animal { //interface só pode ter métodos, sem corpo, se tiver
     String comida = "milho";
 }
 class Gato implements Animal {
+
     @Override
     public void dormir() {
-        System.out.println("zzz");
+
     }
+
     @Override
     public void fazerSom() {
-        System.out.println("miau");
+
     }
+
     @Override
     public void comer(String comida) {
-        if (comida.equals("peixe")) {
-            System.out.println("Comeu " + comida);
-        } else {
-            System.out.println("Não quis comer " + comida);
-        }
 
     }
 }
